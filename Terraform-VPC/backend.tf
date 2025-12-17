@@ -2,8 +2,8 @@
 terraform {
   backend "s3" {
     bucket  = "fritzhomelab-backend-bucket004"
-    key     = "3-tier-web-application.tfstate"
+    key     = "vpc-terraform-github-action.tfstate"
     region  = "us-east-1"
-    profile = "tf-backend"
+    encrypt = true
   }
 }
